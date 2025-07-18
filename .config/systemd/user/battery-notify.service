@@ -1,0 +1,10 @@
+[Unit]
+Description=ACPI Battery Notifier
+
+[Service]
+ExecStart=/home/yourusername/.config/hypr/scripts/battery_notify.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
+

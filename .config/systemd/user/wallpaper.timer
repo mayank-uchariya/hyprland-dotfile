@@ -1,0 +1,11 @@
+[Unit]
+Description=Change jjk wallpaper every 5 minutes
+
+[Timer]
+OnBootSec=30
+OnUnitActiveSec=30
+Unit=wallpaper.service
+
+[Install]
+WantedBy=default.target
+

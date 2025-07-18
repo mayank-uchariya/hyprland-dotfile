@@ -1,0 +1,104 @@
+function templateCoTableContents(gameInfo, selectedCo) {
+    let coTableContents = `<table><tr><td><table>`;
+    const kColSize = 4;
+    for (let i = 0; i < kCoData.length; i++) {
+        if (i != 0 && (i % kColSize) == 0) {
+            coTableContents += `</table></td><td valign="top"><table>`;
+        }
+
+        let co = kCoData[i];
+        let coNameSlug = co.name.toLowerCase().replace(" ", "");
+        let border = co.name === selectedCo ? "borderblue" : "borderwhite";
+        coTableContents += `
+            <tr>
+              <td class="${border}"><img src="${gameInfo.portraitsPrefix}${coNameSlug}.png"></td>
+              <td class="${border}" align="center" valign="center"><span class="small_text"><a>${co.name}</a></span></td>
+            </tr>
+        `;
+    }
+    coTableContents += `</table></td></tr></table>`;
+    return coTableContents;
+}
+
+function templateCoSelectPanel(gameInfo, selectedCo) {
+    let coTableContents = templateCoTableContents(gameInfo, selectedCo);
+    return `
+<div id="co-chooser-panel" style="position: absolute; visibility: visible; z-index: 900; background-image: none; left: 609px; top: 202px;">
+  <table width="1" border="0" cellpadding="1" cellspacing="0" bgcolor="#000000">
+    <tbody>
+      <tr>
+        <td>
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td><b><font color="#FFFFFF" face="Verdana,Arial,Helvetica" size="1"><img src="https://awbw.amarriner.com/terrain/aw2/blankred.gif" height="16" width="1" align="absmiddle">Select CO</font></b></td>
+                <td valign="TOP" align="RIGHT">
+                  <a>
+                    <font color="#BBBBBB" face="Verdana,Arial,Helvetica" size="1">
+                      <img src="terrain/close.png" align="absmiddle" border="0">
+                    </font>
+                  </a>
+                  <img src="terrain/blankred.gif" height="10" width="2">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table width="100%" border="0" cellpadding="2" cellspacing="0" bgcolor="#0066CC">
+            <tbody>
+              <tr>
+                <td valign="TOP">
+                  <font color="#FFFFE6" face="Verdana,Arial,Helvetica" size="1">
+                    ${coTableContents}
+                  </font>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>`;
+}
+
+class CoSelectPanel {
+    constructor(gameInfo) {
+        this.gameInfo = gameInfo;
+        this.selectedCo = "Adder";
+
+        this.panel = document.createElement("div");
+        document.body.appendChild(this.panel);
+
+        this.selectCallback = undefined;
+    }
+
+    generateHtml() {
+        return templateCoSelectPanel(this.gameInfo, this.selectedCo);
+    }
+
+    updateHtml() {
+        this.panel.innerHTML = DOMPurify.sanitize(this.generateHtml());
+        // TODO: co click buttons
+        // TODO: close button
+    }
+
+    openPanel(selectedCo, selectCallback) {
+        this.selectedCo = selectedCo;
+        this.selectCallback = selectCallback;
+        this.updateHtml();
+        this.showPanel();
+    }
+
+    showPanel() {
+        this.panel.style.visibility = "visible";
+    }
+
+    closePanel() {
+        this.panel.style.visibility = "hidden";
+    }
+
+    onCoClick() {
+        console.log("click!");
+    }
+}
+

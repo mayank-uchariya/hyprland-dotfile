@@ -1,0 +1,10 @@
+[Unit]
+Description=Battery monitor daemon
+
+[Service]
+ExecStart=/usr/bin/batsignal -c 5 -l 15 -n -d 30
+Restart=always
+
+[Install]
+WantedBy=default.target
+

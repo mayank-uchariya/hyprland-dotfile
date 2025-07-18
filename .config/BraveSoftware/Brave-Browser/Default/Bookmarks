@@ -1,0 +1,113 @@
+{
+   "checksum": "b4fb9ca946e3e15111ebca97cfc906c9",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13396891996216143",
+            "date_last_used": "0",
+            "guid": "5ec399af-4ef4-4ccc-9afb-2387aee6cb4a",
+            "id": "5",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "GitHub - Keyitdev/sddm-astronaut-theme: Series of modern looking themes for SDDM.",
+            "type": "url",
+            "url": "https://github.com/Keyitdev/sddm-astronaut-theme"
+         }, {
+            "date_added": "13396893085030463",
+            "date_last_used": "13397299613469057",
+            "guid": "8170c746-a604-4d9c-ad25-5ffb1e2e0469",
+            "id": "8",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/"
+         }, {
+            "date_added": "13396893123683964",
+            "date_last_used": "0",
+            "guid": "f94f8f41-aff3-48fa-8968-ea786a9b824d",
+            "id": "9",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Material Alchemy",
+            "type": "url",
+            "url": "https://sane1090x.gumroad.com/l/material-alchemy?utm_source=youtube&utm_medium=description&utm_campaign=hypr4"
+         }, {
+            "date_added": "13396893392849620",
+            "date_last_used": "0",
+            "guid": "fadcfac8-a27f-47a5-acb3-97d945186e0d",
+            "id": "10",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "ChatGPT",
+            "type": "url",
+            "url": "https://chatgpt.com/"
+         }, {
+            "date_added": "13396968597133137",
+            "date_last_used": "13396969779236968",
+            "guid": "c9b610c9-7eed-4419-b788-400f2b9f4b94",
+            "id": "12",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Home · Alexays/Waybar Wiki · GitHub",
+            "type": "url",
+            "url": "https://github.com/Alexays/Waybar/wiki"
+         }, {
+            "date_added": "13397128479356367",
+            "date_last_used": "0",
+            "guid": "4224c024-efa0-41e5-86a0-104a8ee68629",
+            "id": "14",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Hyprland - ArchWiki",
+            "type": "url",
+            "url": "https://wiki.archlinux.org/title/Hyprland"
+         }, {
+            "date_added": "13397135897476107",
+            "date_last_used": "13397151142282578",
+            "guid": "05de95b1-e415-4f81-ac72-bbd1380e1d15",
+            "id": "16",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Bash Tutorial",
+            "type": "url",
+            "url": "https://www.w3schools.com/bash/"
+         } ],
+         "date_added": "13396891260196040",
+         "date_last_used": "0",
+         "date_modified": "13397135897476107",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13396891260196040",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13396891260196040",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

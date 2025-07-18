@@ -1,0 +1,50 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "img/icon16.png",
+         "24": "img/icon24.png",
+         "32": "img/icon32.png"
+      },
+      "default_popup": "popup/index.html",
+      "default_title": "Stylebot"
+   },
+   "author": "Ankit Ahuja",
+   "background": {
+      "service_worker": "background/index.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "exclude_matches": [ "*://*/*.xml" ],
+      "js": [ "editor/index.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": true,
+      "exclude_matches": [ "*://*/*.xml" ],
+      "js": [ "inject-css/index.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extension_description__",
+   "host_permissions": [ "https://drive.google.com/*", "https://www.googleapis.com/*", "https://fonts.googleapis.com/*" ],
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDl/JW/Y8CI0SDOeXfgRv5xJnnafrTXy6UiQiZwb1kPJKM156e7SpMoUnMz6s2Kf8d6xihTsgDcVkpVR0if7DCDZeqpamJrQFpg1aMcbb1+/5EtqtDxaKT+gUjHx8R120MhdL6NuSWYZvREcxP2SGiEP0PmSRQAVScw8dZ0IU6nzwIDAQAB",
+   "manifest_version": 3,
+   "name": "Stylebot",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options/index.html"
+   },
+   "permissions": [ "tabs", "storage", "identity", "contextMenus", "unlimitedStorage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.1.4",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "monaco-editor/*", "editor/index.css", "readability/index.css" ]
+   } ]
+}

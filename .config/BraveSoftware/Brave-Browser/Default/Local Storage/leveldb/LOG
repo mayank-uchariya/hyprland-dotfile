@@ -1,0 +1,6 @@
+2025/07/18-13:36:43.987 4 Reusing MANIFEST /home/mikey/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2025/07/18-13:36:44.000 4 Recovering log #69
+2025/07/18-13:36:44.001 4 Reusing old log /home/mikey/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000069.log 
+2025/07/18-14:10:22.940 4 Level-0 table #73: started
+2025/07/18-14:10:22.944 4 Level-0 table #73: 19582 bytes OK
+2025/07/18-14:10:22.947 4 Delete type=0 #69
