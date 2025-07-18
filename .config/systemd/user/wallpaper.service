@@ -1,7 +1,0 @@
-[Unit]
-Description=Change wallpaper using jjk images
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/zsh $HOME/.config/scripts/jjk_wallpaper.zsh
-

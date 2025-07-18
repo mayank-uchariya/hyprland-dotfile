@@ -1,6 +1,0 @@
-2025/07/13-16:19:29.428 40d Reusing MANIFEST /home/mikey/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
-2025/07/13-16:19:29.439 40d Recovering log #3
-2025/07/13-16:19:29.445 40d Reusing old log /home/mikey/.config/google-chrome/Default/Sync Data/LevelDB/000003.log 
-2025/07/13-16:19:36.320 40e Level-0 table #5: started
-2025/07/13-16:19:36.326 40e Level-0 table #5: 140814 bytes OK
-2025/07/13-16:19:36.328 40e Delete type=0 #3

@@ -1,9 +1,0 @@
-2025/07/17-14:41:05.877 f63 Reusing MANIFEST /home/mikey/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/07/17-14:41:05.877 f63 Recovering log #52
-2025/07/17-14:41:05.879 f63 Reusing old log /home/mikey/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000052.log 
-2025/07/17-14:41:08.207 f64 Compacting 1@1 + 1@2 files
-2025/07/17-14:41:08.214 f64 Generated table #55@1: 364 keys, 59905 bytes
-2025/07/17-14:41:08.214 f64 Compacted 1@1 + 1@2 files => 59905 bytes
-2025/07/17-14:41:08.216 f64 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/07/17-14:41:08.217 f64 Delete type=2 #51
-2025/07/17-14:41:08.217 f64 Delete type=2 #53

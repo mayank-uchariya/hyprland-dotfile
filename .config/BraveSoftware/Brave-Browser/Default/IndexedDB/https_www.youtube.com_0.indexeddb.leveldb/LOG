@@ -1,6 +1,0 @@
-2025/07/18-13:36:55.603 42f Reusing MANIFEST /home/mikey/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/07/18-13:36:55.604 42f Recovering log #52
-2025/07/18-13:36:55.612 42f Reusing old log /home/mikey/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000052.log 
-2025/07/18-13:45:20.194 42e Level-0 table #58: started
-2025/07/18-13:45:20.215 42e Level-0 table #58: 1565759 bytes OK
-2025/07/18-13:45:20.218 42e Delete type=0 #52
