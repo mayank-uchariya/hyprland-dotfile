@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 #!/usr/bin/env bash
 
 sudo pacman -S --noconfirm ttf-jetbrains-mono-nf
+=======
+#!/bin/bash
+>>>>>>> e33315f (Fixed the script)
 
 echo "Hello, this is my hyprland installation setup."
 echo "Read the following question and answer them throughly."
