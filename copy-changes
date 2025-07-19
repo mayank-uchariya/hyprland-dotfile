@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+pushd ~/.config
+sudo cp -r hypr ghostty nvim waybar wlogout rofi cava networkmanager-dmenu swaync ../hyprland-dotfile/env/.config
+popd
+
+pushd $HOME
+sudo cp -r .zshrc .zsh_profile .xprofile .tmux.conf hyprland-dotfile/env
+popd
+
+pushd $HOME/.local
+sudo cp -r scripts $HOME/hyprland-dotfile/env/.local/
+popd
+
+./gitpush

@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+#pushd ~/dev/py_projects/
+#git add .
+#git commit -m 'automated dev commit'
+#git push
+#popd
+
+pushd ~/hyprland-dotfile/
+git add .
+git commit -m 'automated dev commit'
+git push
+popd
+
+#pushd ~/.config/nvim/
+#git add .
+#git commit -m 'automated dev commit'
+#git push
+#popd
+
