@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# Variables
+PARTITION="/dev/nvme0n1p5"
+MOUNT_POINT="/mnt/windows"
+FS_TYPE="ntfs3"
+
+# Check if already mounted
+if mount | grep -q "$MOUNT_POINT"; then
+    echo "Partition is already mounted at $MOUNT_POINT."
+    exit 0
+fi
+
+# Try to mount the partition
+sudo mount -t $FS_TYPE $PARTITION $MOUNT_POINT
+
+# Check result
+if [ $? -eq 0 ]; then
+    echo "Successfully mounted $PARTITION to $MOUNT_POINT"
+else
+    echo "Failed to mount $PARTITION. Trying ntfs-3g fallback..."
+    sudo mount -t ntfs-3g $PARTITION $MOUNT_POINT
+    if [ $? -eq 0 ]; then
+        echo "Mounted using ntfs-3g successfully."
+    else
+        echo "Both mounting methods failed. Check if ntfs3 or ntfs-3g is installed."
+        exit 1
+    fi
+fi

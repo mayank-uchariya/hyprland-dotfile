@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+pushd ~/dev/py_projects/
+git add .
+git commit -m 'automated dev commit'
+git push
+popd
+
+pushd ~/dotfiles/
+git add .
+git commit -m 'automated dev commit'
+git push
+popd
+
+pushd ~/.config/nvim/
+git add .
+git commit -m 'automated dev commit'
+git push
+popd

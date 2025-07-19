@@ -85,8 +85,8 @@ if [ "$foo" = 'y' ] || [ "$foo" = 'Y' ]; then
     echo "I will copy your existing files in .config.backup"
     mkdir -p ~/.config.backup
     for folder in hypr rofi ghostty nvim mako waybar; do
-        [ -d ~/.config/$folder ] && mv ~/.config/$folder ~/.config.backup/
-        cp -r dotfiles/.config/$folder ~/.config/ || { echo "Failed to copy $folder"; exit 1; }
+        [ -d ~/env/$folder ] && mv ~/env/$folder ~/.config.backup/
+        cp -r dotfiles/env/$folder ~/ || { echo "Failed to copy $folder"; exit 1; }
     done
 else
     echo "Config files does not applied"
