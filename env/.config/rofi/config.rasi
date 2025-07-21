@@ -38,22 +38,30 @@ configuration {
 
 window {
   location: center;
-  width:    650px;
-  padding:  25px;
+  width: 700px;
   border-radius: 16px;
   background-color: @bg0;
   transparency: "real";
 }
 
 mainbox {
-  children: [ inputbar, listview ];
+  children: [ dummywall, listview ];
   spacing:15px;
+  orientation: horizontal;
+}
+
+dummywall{
+  children: [ inputbar ];
+  padding : 7em 0em;
+  background-color: transparent;
+  background-image: url("~/.config/rofi/current-wallpaper.jpg",height);
+  location: center;
+  orientation: vertical;
 }
 
 inputbar {
   children: [ prompt, entry ];
   padding: 12px;
-  margin-bottom: 25px;
 }
 
 prompt {
@@ -63,14 +71,17 @@ prompt {
 entry {
   placeholder: "Search";
   placeholder-color: @fg3;
+  background-color: black;
+  border-radius: 10px;
   padding: 8px;
   text-color: @fg0;
-  font: "JetBrainsMono Nerd Font Mono 12";
+  font: "JetBrainsMono Nerd Font Mono 10";
 }
 
 listview {
-  columns: 3;
-  lines: 3;
+  padding: 20px;
+  columns: 1;
+  lines: 4;
   layout: vertical;
   dynamic:true;
   spacing: 10px;
@@ -80,18 +91,19 @@ element {
   padding: 10px;
   border-radius: 10px;
   text-color: @fg1;
-  orientation: vertical;
+  orientation: horizontal;
+  spacing: 10px;
 }
 
 element-icon {
-  size: 40px;
-  horizontal-align: 0.5;
+  size: 36px;
+  vertical-align: 0.5;
 }
 
 element-text {
   text-color: inherit;
-  horizontal-align: 0.5;
-  font: "JetBrainsMono Nerd Font 10";
+  vertical-align: 0.5;
+  font: "JetBrainsMono Nerd Font 12";
 }
 
 element selected {
